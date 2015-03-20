@@ -1,6 +1,4 @@
-##These two functions create, set, and update matrices with cached inverse values.
-
-## Caches the inverse of an input matrix. Provides functions for getting the cached value of the inverse, and for setting a new cached value.
+##These two functions create matrices with methods to set, and update and cache its inversei.
 
 makeCacheMatrix <- function(x = as.matrix()) {
     
