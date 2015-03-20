@@ -2,17 +2,17 @@
 
 ## Caches the inverse of an input matrix. Provides functions for getting the cached value of the inverse, and for setting a new cached value.
 
-makeCacheMatrix <- function(x = matrix()) {
+makeCacheMatrix <- function(x = as.matrix()) {
     
 	inv <- NULL
     set <- function(y){
         x<<-y
         inv<<-NULL
     }
-    get<-function(){ x }
+    get <-function(){ x }
     setInverse <- function(new_inv) { inv <<- new_inv }
     getInverse <- function(){ inv }
-    list(setMatrix = set, getMatrix = get, setInverse = setInverse, getInverse = getInverse)
+    list(set = set, get = get, setInverse = setInverse, getInverse = getInverse)	
 }
 
 
